@@ -45,7 +45,25 @@ namespace DarioAugurApp
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Alan = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Beppe = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Bruno = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Donny = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Icon = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int Picci = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int Simone = 2130837510;
 			
 			static Drawable()
 			{
@@ -60,8 +78,11 @@ namespace DarioAugurApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int MyButton = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int imageView1 = 2131099649;
 			
 			static Id()
 			{
@@ -89,14 +110,84 @@ namespace DarioAugurApp
 			}
 		}
 		
+		public partial class Raw
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int Alan = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int Beppe = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int Bruno = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int Diego = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int Donny = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int Fabio = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int Fabri = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int Faggi = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int Gallo = 2130968584;
+			
+			// aapt resource value: 0x7f040009
+			public const int Ges_ = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int Mauro = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int Nando = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int Paolo = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int Picci = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int Roby = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int Simone = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int Stefen = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int Tabo = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int Vale = 2130968594;
+			
+			static Raw()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Raw()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Cliccami = 2131034112;
 			
 			static String()
 			{
