@@ -16,6 +16,7 @@ namespace DarioAugurApp
     {
         private List<int> _mp3List;
         private List<int> _imageList;
+        private List<int> _contatoriList;
         static Random _rnd = new Random();
 
         public static Random Rnd
@@ -28,12 +29,19 @@ namespace DarioAugurApp
         {
             _mp3List = new List<int>();
             _imageList = new List<int>();
+            _contatoriList = new List<int>();
         }
 
         public int SelectRandom()
         {
             int r = Rnd.Next(_mp3List.Count);
+            _contatoriList[r] += 1;
             return r;
+        }
+
+        public int ResContatore(int indice)
+        {
+            return _contatoriList[indice];
         }
 
         public void RiempiLista()
@@ -91,6 +99,11 @@ namespace DarioAugurApp
 
             _mp3List.Add(Resource.Raw.Vale);
             _imageList.Add(Resource.Drawable.Vale);
+
+            foreach (var i in _mp3List)
+            {
+                _contatoriList.Add(0);
+            }
 
         }
 

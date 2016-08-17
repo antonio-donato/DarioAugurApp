@@ -51,6 +51,9 @@ namespace DarioAugurApp
             _player = MediaPlayer.Create(this, mp3Selected);
             _player.Start();
 
+            var textView = FindViewById<TextView>(Resource.Id.textView1);
+            textView.Text = "Conteggio: " + scelta.ResContatore(numeroRnd).ToString();
+
         }
     }
 }
