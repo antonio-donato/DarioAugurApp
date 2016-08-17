@@ -13,7 +13,8 @@ namespace DarioAugurApp
     public class MainActivity : Activity
     {
 
-        Dario1 scelta = new Dario1();
+        private Dario1 scelta = new Dario1();
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -23,7 +24,7 @@ namespace DarioAugurApp
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.button1);
+            Button button = FindViewById<Button>(Resource.Id.MyButton);
 
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
             button.Click += Button_Click;
@@ -33,7 +34,8 @@ namespace DarioAugurApp
 
         }
 
-        MediaPlayer _player;
+        private MediaPlayer _player;
+
         private void Button_Click(object sender, EventArgs e)
         {
 
@@ -42,7 +44,7 @@ namespace DarioAugurApp
             int imageSelected = scelta.SelezionaImage(numeroRnd);
 
             var imageView =
-                    FindViewById<ImageView>(Resource.Id.imageView1);
+                FindViewById<ImageView>(Resource.Id.imageView1);
             imageView.Visibility = ViewStates.Visible;
             imageView.SetImageResource(imageSelected);
 
@@ -51,4 +53,5 @@ namespace DarioAugurApp
 
         }
     }
+}
 

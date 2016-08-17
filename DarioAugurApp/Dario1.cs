@@ -16,9 +16,7 @@ namespace DarioAugurApp
     {
         private List<int> _mp3List;
         private List<int> _imageList;
-        private string _path;
         static Random _rnd = new Random();
-        private string _searchPattern;
 
         public static Random Rnd
         {
@@ -48,6 +46,51 @@ namespace DarioAugurApp
 
             _mp3List.Add(Resource.Raw.Simone);
             _imageList.Add(Resource.Drawable.Simone);
+
+            _mp3List.Add(Resource.Raw.Alan);
+            _imageList.Add(Resource.Drawable.Alan);
+
+            _mp3List.Add(Resource.Raw.Beppe);
+            _imageList.Add(Resource.Drawable.Beppe);
+
+            _mp3List.Add(Resource.Raw.Bruno);
+            _imageList.Add(Resource.Drawable.Bruno);
+
+            _mp3List.Add(Resource.Raw.Diego);
+            _imageList.Add(Resource.Drawable.Diego);
+
+            _mp3List.Add(Resource.Raw.Fabio);
+            _imageList.Add(Resource.Drawable.Fabio);
+
+            _mp3List.Add(Resource.Raw.Fabri);
+            _imageList.Add(Resource.Drawable.Fabri);
+
+            _mp3List.Add(Resource.Raw.Faggi);
+            _imageList.Add(Resource.Drawable.Faggi);
+
+            _mp3List.Add(Resource.Raw.Gallo);
+            _imageList.Add(Resource.Drawable.Gallo);
+
+            _mp3List.Add(Resource.Raw.Mauro);
+            _imageList.Add(Resource.Drawable.Mauro);
+
+            _mp3List.Add(Resource.Raw.Nando);
+            _imageList.Add(Resource.Drawable.Nando);
+
+            _mp3List.Add(Resource.Raw.Paolo);
+            _imageList.Add(Resource.Drawable.Paolo);
+
+            _mp3List.Add(Resource.Raw.Roby);
+            _imageList.Add(Resource.Drawable.Roby);
+
+            _mp3List.Add(Resource.Raw.Stefen);
+            _imageList.Add(Resource.Drawable.Stefen);
+
+            _mp3List.Add(Resource.Raw.Tabo);
+            _imageList.Add(Resource.Drawable.Tabo);
+
+            _mp3List.Add(Resource.Raw.Vale);
+            _imageList.Add(Resource.Drawable.Vale);
 
         }
 
