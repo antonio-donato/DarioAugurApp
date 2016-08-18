@@ -14,7 +14,7 @@ namespace DarioAugurApp
     public class MainActivity : Activity
     {
 
-        private Dario1 scelta = new Dario1();
+        private readonly Dario1 scelta = new Dario1();
 
         protected override void OnCreate(Bundle bundle)
         {

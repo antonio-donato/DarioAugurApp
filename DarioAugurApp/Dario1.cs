@@ -100,6 +100,9 @@ namespace DarioAugurApp
             _mp3List.Add(Resource.Raw.Vale);
             _imageList.Add(Resource.Drawable.Vale);
 
+            _mp3List.Add(Resource.Raw.Ges_);
+            _imageList.Add(Resource.Drawable.Ges_);
+
             foreach (var i in _mp3List)
             {
                 _contatoriList.Add(0);

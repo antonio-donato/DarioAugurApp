@@ -72,34 +72,37 @@ namespace DarioAugurApp
 			public const int Gallo = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int Icon = 2130837513;
+			public const int Ges_ = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int Mauro = 2130837514;
+			public const int Icon = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int Nando = 2130837515;
+			public const int Mauro = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int Paolo = 2130837516;
+			public const int Nando = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int Picci = 2130837517;
+			public const int Paolo = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int Roby = 2130837518;
+			public const int Picci = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int Simone = 2130837519;
+			public const int Roby = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int Stefen = 2130837520;
+			public const int Simone = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int Tabo = 2130837521;
+			public const int Stefen = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int Vale = 2130837522;
+			public const int Tabo = 2130837522;
+			
+			// aapt resource value: 0x7f020013
+			public const int Vale = 2130837523;
 			
 			static Drawable()
 			{
