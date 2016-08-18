@@ -1,6 +1,7 @@
 ﻿using System;
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -9,7 +10,7 @@ using Android.Media;
 
 namespace DarioAugurApp
 {
-    [Activity(Label = "DarioAugurApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "DarioAugurApp", MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : Activity
     {
 
