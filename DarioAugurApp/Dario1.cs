@@ -23,6 +23,7 @@ namespace DarioAugurApp
             _contatoriList = new List<int>();
         }
 
+        // Selezioan un numero random con massimo il numero di elementi della lista mp3 
         public int SelectRandom()
         {
             int r = Rnd.Next(_mp3List.Count);
@@ -30,11 +31,13 @@ namespace DarioAugurApp
             return r;
         }
 
+        // Restituisce il totale del conteggio dell'elemento
         public int ResContatore(int indice)
         {
             return _contatoriList[indice];
         }
 
+        // Riempi le liste di MP3 ed immagini con quelle fornite
         public void RiempiLista()
         {
             _mp3List.Add(Resource.Raw.Picci);
