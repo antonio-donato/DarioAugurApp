@@ -31,11 +31,6 @@ namespace DarioAugurApp
             return r;
         }
 
-        // Restituisce il totale del conteggio dell'elemento
-        public int ResContatore(int indice)
-        {
-            return _contatoriList[indice];
-        }
 
         // Riempi le liste di MP3 ed immagini con quelle fornite
         public void RiempiLista()
@@ -104,14 +99,22 @@ namespace DarioAugurApp
 
         }
 
-        public int SelezionaMp3(int numeroRnd)
+        // restituisce l'mp3 dell'elemento selezionato
+        public int SelezionaMp3(int indice)
         {
-            return _mp3List[numeroRnd];
+            return _mp3List[indice];
         }
 
-        public int SelezionaImage(int numeroRnd)
+        //restituisce l'immagine dell'elemento selezioanto
+        public int SelezionaImage(int indice)
         {
-            return _imageList[numeroRnd];
+            return _imageList[indice];
+        }
+
+        // Restituisce il totale del conteggio dell'elemento
+        public int ResContatore(int indice)
+        {
+            return _contatoriList[indice];
         }
     }
 }
