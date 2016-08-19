@@ -14,7 +14,7 @@ namespace DarioAugurApp
     public class MainActivity : Activity
     {
 
-        private readonly Dario1 scelta = new Dario1();
+        private readonly Dario1 _scelta = new Dario1();
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -31,7 +31,7 @@ namespace DarioAugurApp
             button.Click += Button_Click;
 
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
-            scelta.RiempiLista();
+            _scelta.RiempiLista();
 
         }
 
@@ -40,9 +40,9 @@ namespace DarioAugurApp
         private void Button_Click(object sender, EventArgs e)
         {
 
-            int numeroRnd = scelta.SelectRandom();
-            int mp3Selected = scelta.SelezionaMp3(numeroRnd);
-            int imageSelected = scelta.SelezionaImage(numeroRnd);
+            int numeroRnd = _scelta.SelectRandom();
+            int mp3Selected = _scelta.SelezionaMp3(numeroRnd);
+            int imageSelected = _scelta.SelezionaImage(numeroRnd);
 
             var imageView =
                 FindViewById<ImageView>(Resource.Id.imageView1);
@@ -53,7 +53,7 @@ namespace DarioAugurApp
             _player.Start();
 
             var textView = FindViewById<TextView>(Resource.Id.textView1);
-            textView.Text = "Conteggio: " + scelta.ResContatore(numeroRnd).ToString();
+            textView.Text = "Conteggio: " + _scelta.ResContatore(numeroRnd).ToString();
 
         }
     }
