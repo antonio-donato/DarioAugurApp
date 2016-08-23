@@ -52,7 +52,7 @@ namespace DarioAugurApp
             _player.Start();
 
             var textView = FindViewById<TextView>(Resource.Id.textView1);
-            textView.Text = "Conteggio: " + _scelta.ResContatore(numeroRnd).ToString();
+            textView.Text = "Visualizzato: " + _scelta.ResContatore(numeroRnd).ToString();
 
         }
     }
