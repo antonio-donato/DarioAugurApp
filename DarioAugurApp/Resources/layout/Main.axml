@@ -3,17 +3,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:id="@+id/MyButton"
+    <ImageButton
+        android:src="@drawable/icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Cliccami" />
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView1"
-        android:visibility="invisible" />
+        android:id="@+id/imageButton1" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
