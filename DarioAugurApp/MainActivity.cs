@@ -25,11 +25,9 @@ namespace DarioAugurApp
 
             // Get our button from the layout resource,
             // and attach an event to it
-            //Button button = FindViewById<Button>(Resource.Id.MyButton);
             ImageButton image = FindViewById<ImageButton>(Resource.Id.imageButton1);
 
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
-            //button.Click += Button_Click;
             image.Click += Button_Click;
 
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
@@ -45,11 +43,6 @@ namespace DarioAugurApp
             int numeroRnd = _scelta.SelectRandom();
             int mp3Selected = _scelta.SelezionaMp3(numeroRnd);
             int imageSelected = _scelta.SelezionaImage(numeroRnd);
-
-            //var imageView =
-            //    FindViewById<ImageView>(Resource.Id.imageView1);
-            //imageView.Visibility = ViewStates.Visible;
-            //imageView.SetImageResource(imageSelected);
 
             var imageButton =
                 FindViewById<ImageButton>(Resource.Id.imageButton1);
