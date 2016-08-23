@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyCustomTheme" parent="android:Theme.Material.Light">
+    <!-- Override the app bar color -->
+    <item name="android:colorPrimary">@color/my_cyan</item>
+    <!-- Override the statusbar color -->
+    <item name="android:colorPrimaryDark">@color/my_blue</item>
+    <item name="android:statusBarColor">@color/my_blue_2</item>
+    <!-- Override the color of UI controls -->
+    <item name="android:colorAccent">@color/my_cyan</item>
+    <item name="android:navigationBarColor">@color/my_blue</item>
+  </style>
+</resources>

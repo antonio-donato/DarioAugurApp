@@ -10,7 +10,7 @@ using Android.Media;
 
 namespace DarioAugurApp
 {
-    [Activity(Label = "DarioAugurApp", MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "DarioAugurApp", MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait, Theme = "@style/MyCustomTheme")]
     public class MainActivity : Activity
     {
 

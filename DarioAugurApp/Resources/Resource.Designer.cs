@@ -41,6 +41,28 @@ namespace DarioAugurApp
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int my_blue = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int my_blue_2 = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int my_cyan = 2131034114;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -117,14 +139,14 @@ namespace DarioAugurApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int gridLayout1 = 2131099648;
+			// aapt resource value: 0x7f080000
+			public const int gridLayout1 = 2131230720;
 			
-			// aapt resource value: 0x7f060001
-			public const int imageButton1 = 2131099649;
+			// aapt resource value: 0x7f080001
+			public const int imageButton1 = 2131230721;
 			
-			// aapt resource value: 0x7f060002
-			public const int textView1 = 2131099650;
+			// aapt resource value: 0x7f080002
+			public const int textView1 = 2131230722;
 			
 			static Id()
 			{
@@ -225,11 +247,11 @@ namespace DarioAugurApp
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int ApplicationName = 2131099649;
 			
-			// aapt resource value: 0x7f050000
-			public const int Cliccami = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int Cliccami = 2131099648;
 			
 			static String()
 			{
@@ -237,6 +259,22 @@ namespace DarioAugurApp
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int MyCustomTheme = 2131165184;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
