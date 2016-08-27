@@ -26,17 +26,26 @@ namespace DarioAugurApp
             // Get our button from the layout resource,
             // and attach an event to it
             ImageButton image = FindViewById<ImageButton>(Resource.Id.imageButton1);
-            Button buttonTest = FindViewById<Button>(Resource.Id.buttonTest);
+            Button buttonRandom = FindViewById<Button>(Resource.Id.buttonRandom);
+            Button buttonSelection = FindViewById<Button>(Resource.Id.buttonSelection);
 
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
-            image.Click += Button_Click;
+            image.Click += ButtonRandom_Click;
 
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
-            buttonTest.Click += ButtonTest_Click;
+            buttonRandom.Click += ButtonRandom_Click;
+
+            // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            buttonSelection.Click += ButtonSelection_Click;
 
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
             _scelta.RiempiLista();
 
+        }
+
+        private void ButtonSelection_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void ButtonTest_Click(object sender, EventArgs e)
@@ -46,7 +55,7 @@ namespace DarioAugurApp
 
         private MediaPlayer _player;
 
-        private void Button_Click(object sender, EventArgs e)
+        private void ButtonRandom_Click(object sender, EventArgs e)
         {
 
             int numeroRnd = _scelta.SelectRandom();

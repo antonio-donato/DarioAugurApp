@@ -20,8 +20,13 @@
             android:layout_marginRight="0.0dp" />
     </GridLayout>
     <Button
-        android:text="Button"
+        android:text="Auguri Random"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonTest" />
+        android:id="@+id/buttonRandom" />
+    <Button
+        android:text="Seleziona Auguri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSelection" />
 </LinearLayout>
