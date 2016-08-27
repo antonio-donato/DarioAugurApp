@@ -26,7 +26,6 @@ namespace DarioAugurApp
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::DarioAugurApp.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Attribute
@@ -139,6 +138,9 @@ namespace DarioAugurApp
 		
 		public partial class Id
 		{
+			
+			// aapt resource value: 0x7f080003
+			public const int buttonTest = 2131230723;
 			
 			// aapt resource value: 0x7f080000
 			public const int gridLayout1 = 2131230720;

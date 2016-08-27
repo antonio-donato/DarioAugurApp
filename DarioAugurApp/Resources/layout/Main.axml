@@ -19,4 +19,9 @@
             android:gravity="center"
             android:layout_marginRight="0.0dp" />
     </GridLayout>
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTest" />
 </LinearLayout>

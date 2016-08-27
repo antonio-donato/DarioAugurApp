@@ -26,13 +26,22 @@ namespace DarioAugurApp
             // Get our button from the layout resource,
             // and attach an event to it
             ImageButton image = FindViewById<ImageButton>(Resource.Id.imageButton1);
+            Button buttonTest = FindViewById<Button>(Resource.Id.buttonTest);
 
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
             image.Click += Button_Click;
 
+            // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            buttonTest.Click += ButtonTest_Click;
+
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
             _scelta.RiempiLista();
 
+        }
+
+        private void ButtonTest_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private MediaPlayer _player;
