@@ -36,19 +36,17 @@ namespace DarioAugurApp
             buttonRandom.Click += ButtonRandom_Click;
 
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
-            buttonSelection.Click += ButtonSelection_Click;
+            buttonSelection.Click += delegate
+            {
+                StartActivity(typeof (SceltaActivity));
+            };
 
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
-            _scelta.RiempiLista();
+            //_scelta.RiempiLista();
 
         }
 
         private void ButtonSelection_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ButtonTest_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }

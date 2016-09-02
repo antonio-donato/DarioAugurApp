@@ -5,14 +5,15 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace DarioAugurApp.Resources.layout
+namespace DarioAugurApp
 {
-    [Activity(Label = "SceltaActivity")]
+    [Activity(Label = "Seleziona Auguri", ScreenOrientation = ScreenOrientation.Portrait, Theme = "@style/MyCustomTheme")]
     public class SceltaActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
