@@ -20,7 +20,13 @@ namespace DarioAugurApp
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            var gridview = FindViewById<GridView>(Resource.Id.gridView1);
+            gridview.Adapter = new ImageAdapter(this);
+
+            gridview.ItemClick += delegate(object sender, AdapterView.ItemClickEventArgs args)
+            {
+                Toast.MakeText(this, args.Position.ToString(), ToastLength.Short).Show();
+            };
         }
     }
 }
