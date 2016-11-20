@@ -52,9 +52,9 @@ namespace DarioAugurApp
 
             if (convertView == null)
             {  // if it's not recycled, initialize some attributes
-                imageView = new ImageView(context) {LayoutParameters = new GridView.LayoutParams(100, 100)};
-                imageView.SetScaleType(ImageView.ScaleType.CenterCrop);
-                imageView.SetPadding(2, 2, 2, 2);
+                imageView = new ImageView(context) {LayoutParameters = new GridView.LayoutParams(200, 200)};
+                imageView.SetScaleType(ImageView.ScaleType.FitCenter);
+                imageView.SetPadding(5, 5, 5, 5);
             }
             else
             {
