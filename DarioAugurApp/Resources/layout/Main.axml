@@ -12,12 +12,6 @@
         <ImageButton
             android:src="@drawable/icon"
             android:id="@+id/imageButton1" />
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView1"
-            android:textAlignment="gravity"
-            android:gravity="center"
-            android:layout_marginRight="0.0dp" />
     </GridLayout>
     <Button
         android:text="Auguri Random"

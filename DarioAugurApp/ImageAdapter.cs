@@ -16,14 +16,23 @@ namespace DarioAugurApp
     {
         Context context;
 
+        // references to our images
+        List<int> thumbIds;
+
         public ImageAdapter(Context c)
         {
             context = c;
         }
 
+        public ImageAdapter(Context c, List<int> d)
+        {
+            context = c;
+            thumbIds = d;
+        }
+
         public override int Count
         {
-            get { return thumbIds.Length; }
+            get { return thumbIds.Count; }
         }
 
         public override Java.Lang.Object GetItem(int position)
@@ -56,19 +65,6 @@ namespace DarioAugurApp
             return imageView;
         }
 
-        // references to our images
-        int[] thumbIds = {
-        Resource.Drawable.Alan, Resource.Drawable.Beppe,
-        Resource.Drawable.Bruno, Resource.Drawable.Diego,
-        Resource.Drawable.Donny, Resource.Drawable.Fabio,
-        Resource.Drawable.Fabri, Resource.Drawable.Faggi,
-        Resource.Drawable.Gallo, Resource.Drawable.Ges_,
-        Resource.Drawable.Mauro, Resource.Drawable.Nando,
-        Resource.Drawable.Paolo, Resource.Drawable.Picci,
-        Resource.Drawable.Roby, Resource.Drawable.Simone,
-        Resource.Drawable.Stefen, Resource.Drawable.Tabo,
-        Resource.Drawable.Vale
-    };
 
     }
 }

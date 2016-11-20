@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Media;
+using Newtonsoft.Json;
 
 namespace DarioAugurApp
 {
@@ -14,7 +15,7 @@ namespace DarioAugurApp
     public class MainActivity : Activity
     {
 
-        private readonly Dario1 _scelta = new Dario1();
+        private Dario1 _scelta = new Dario1();
         private MediaPlayer _player;
 
         protected override void OnCreate(Bundle bundle)
@@ -39,7 +40,9 @@ namespace DarioAugurApp
             // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
             buttonSelection.Click += delegate
             {
-                StartActivity(typeof (SceltaActivity));
+                var sceltaActivity = new Intent(this, typeof(SceltaActivity));
+                sceltaActivity.PutExtra("MyData", JsonConvert.SerializeObject(_scelta));
+                StartActivity(sceltaActivity);
             };
 
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
@@ -61,9 +64,8 @@ namespace DarioAugurApp
             _player = MediaPlayer.Create(this, mp3Selected);
             _player.Start();
 
-            //var textView = FindViewById<TextView>(Resource.Id.textView1);
-            //textView.Text = "Visualizzato: " + _scelta.ResContatore(numeroRnd).ToString();
-            String testoToast = "Visualizzato: " + _scelta.ResContatore(numeroRnd).ToString();
+            String volte = _scelta.ResContatore(numeroRnd) < 2 ? "volta" : "volte";
+            String testoToast = "Visualizzato " + _scelta.ResContatore(numeroRnd).ToString() + " " + volte;
             Toast.MakeText(this, testoToast, ToastLength.Short).Show();
         }
     }

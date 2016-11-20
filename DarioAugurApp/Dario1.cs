@@ -5,8 +5,8 @@ namespace DarioAugurApp
 {
     public class Dario1
     {
-        private List<int> _mp3List;
-        private List<int> _imageList;
+        public List<int> _mp3List;
+        public List<int> _imageList;
         private List<int> _contatoriList;
         static Random _rnd = new Random();
 
