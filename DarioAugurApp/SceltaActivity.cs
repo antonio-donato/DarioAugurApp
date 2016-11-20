@@ -13,12 +13,16 @@ using Android.Widget;
 
 namespace DarioAugurApp
 {
-    [Activity(Label = "Seleziona Auguri", ScreenOrientation = ScreenOrientation.Portrait, Theme = "@style/MyCustomTheme")]
+    [Activity(Label = "SceltaActivity", ScreenOrientation = ScreenOrientation.Portrait, Theme = "@style/MyCustomTheme")]
     public class SceltaActivity : Activity
     {
+        private readonly Dario1 _scelta = new Dario1();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            SetContentView(Resource.Layout.SceltaActivity);
 
             var gridview = FindViewById<GridView>(Resource.Id.gridView1);
             gridview.Adapter = new ImageAdapter(this);
@@ -27,6 +31,9 @@ namespace DarioAugurApp
             {
                 Toast.MakeText(this, args.Position.ToString(), ToastLength.Short).Show();
             };
+
+            _scelta.RiempiLista();
+
         }
     }
 }

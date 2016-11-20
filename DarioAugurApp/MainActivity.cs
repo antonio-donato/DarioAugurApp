@@ -15,6 +15,7 @@ namespace DarioAugurApp
     {
 
         private readonly Dario1 _scelta = new Dario1();
+        private MediaPlayer _player;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -42,16 +43,9 @@ namespace DarioAugurApp
             };
 
             // Riempio l'array contenente l'mp3 e l'immagine della persona scelta
-            //_scelta.RiempiLista();
+            _scelta.RiempiLista();
 
         }
-
-        private void ButtonSelection_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private MediaPlayer _player;
 
         private void ButtonRandom_Click(object sender, EventArgs e)
         {
@@ -67,9 +61,10 @@ namespace DarioAugurApp
             _player = MediaPlayer.Create(this, mp3Selected);
             _player.Start();
 
-            var textView = FindViewById<TextView>(Resource.Id.textView1);
-            textView.Text = "Visualizzato: " + _scelta.ResContatore(numeroRnd).ToString();
-
+            //var textView = FindViewById<TextView>(Resource.Id.textView1);
+            //textView.Text = "Visualizzato: " + _scelta.ResContatore(numeroRnd).ToString();
+            String testoToast = "Visualizzato: " + _scelta.ResContatore(numeroRnd).ToString();
+            Toast.MakeText(this, testoToast, ToastLength.Short).Show();
         }
     }
 }
