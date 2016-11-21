@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace DarioAugurApp
 {
@@ -9,6 +10,8 @@ namespace DarioAugurApp
         public List<int> _imageList;
         private List<int> _contatoriList;
         static Random _rnd = new Random();
+        private FieldInfo[] _raw;
+        private FieldInfo[] _drawable;
 
         public static Random Rnd
         {
@@ -35,6 +38,19 @@ namespace DarioAugurApp
         // Riempi le liste di MP3 ed immagini con quelle fornite
         public void RiempiLista()
         {
+            _raw = typeof(Resource.Raw).GetFields();
+            _drawable = typeof(Resource.Drawable).GetFields();
+
+            //foreach (var fieldInfo in _raw)
+            //{
+            //    _mp3List.Add(fieldInfo.GetHashCode());
+            //}
+
+            //foreach (var fieldInfo in _drawable)
+            //{
+            //    _imageList.Add(fieldInfo.GetHashCode());
+            //}
+
             _mp3List.Add(Resource.Raw.Picci);
             _imageList.Add(Resource.Drawable.Picci);
 
