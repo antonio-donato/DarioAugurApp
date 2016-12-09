@@ -25,9 +25,9 @@ namespace DarioAugurApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.SceltaActivity);
 
+            this.Title = "Scegli il tuo omino!";
             _scelta = DeserializeObject<Dario1>(Intent.GetStringExtra("MyData"));
             _thumbsIds = _scelta._imageList;
             _mp3List = _scelta._mp3List;

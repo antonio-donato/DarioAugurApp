@@ -75,6 +75,9 @@ namespace DarioAugurApp
             _mp3List.Add(Resource.Raw.Fabio);
             _imageList.Add(Resource.Drawable.Fabio);
 
+            _mp3List.Add(Resource.Raw.Albert);
+            _imageList.Add(Resource.Drawable.Albert);
+
             _mp3List.Add(Resource.Raw.Fabri);
             _imageList.Add(Resource.Drawable.Fabri);
 

@@ -17,10 +17,14 @@
         android:text="Auguri Random"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonRandom" />
+        android:id="@+id/buttonRandom"
+        android:background="@drawable/green_button"
+        style="@style/button_green" />
     <Button
         android:text="Seleziona Auguri"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonSelection" />
+        android:id="@+id/buttonSelection"
+        android:background="@drawable/green_button"
+        style="@style/button_green" />
 </LinearLayout>
